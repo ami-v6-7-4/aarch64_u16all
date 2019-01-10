@@ -8,20 +8,17 @@ runtime:
   nodePool: custom__aarch64__Ubuntu_16_04
   
 services:
-  #- cassandra 
   - couchdb 
   - elasticsearch 
   - memcached 
   - mongodb 
-  #- mysql 
   - neo4j 
   - postgres 
   - rabbitmq 
-  - redis  
-  #- riak 
+  - redis
   - selenium 
   - sqlite
-  
+
 build:
   pre_ci_boot:
     image_name: drydock/aarch64_u16all
